@@ -37,6 +37,11 @@ body {
   
 }
 
+.navbar-container {
+  width:85%;
+  margin:0 auto;
+}
+
 
 
 
@@ -46,6 +51,7 @@ body {
 /* Carousel base class */
 .carousel {
   margin-bottom: 0;
+  background-color: black;
   /*margin-top:40px;*/
 }
 
@@ -123,20 +129,19 @@ body {
 @media (max-width: 979px) {
 
   .container.navbar-wrapper {
-    margin-bottom: 0;
+    /*margin-bottom: 0;*/
     width: auto;
   }
   .navbar-inner {
     border-radius: 0;
-    margin: -20px 0;
+    /*margin: -20px 0;*/
   }
 
   .carousel .item {
-    height: 500px;
+    /*height: 500px;*/
   }
   .carousel img {
     width: auto;
-    height: 500px;
   }
 
   .featurette {
@@ -156,7 +161,7 @@ body {
 @media (max-width: 767px) {
 
   .navbar-inner {
-    margin: -20px;
+    margin: 0 -20px 0 -20px;
   }
 
   .carousel {
@@ -167,10 +172,10 @@ body {
 
   }
   .carousel .item {
-    height: 300px;
+    /*height: 300px;*/
   }
   .carousel img {
-    height: 300px;
+    /*height: 300px;*/
   }
   .carousel-caption {
     width: 65%;
