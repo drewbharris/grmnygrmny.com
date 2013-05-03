@@ -1,6 +1,6 @@
 var Application = {
 	begin: function(){
-		this.changeContent('albums');
+		this.changeContent('releases');
 		this.setupCallbacks();
 	},
 	changeContent: function(contentName){
@@ -14,13 +14,16 @@ var Application = {
 		// this.setHash(contentName);
 	},
 	setupCallbacks: function(){
-		$("#albums-button").click(function(event){
-			this.changeContent('albums');
+		$("#releases-button").click(function(event){
+			event.preventDefault();
+			this.changeContent('releases');
 		}.bind(this));
 		$("#about-button").click(function(event){
+			event.preventDefault();
 			this.changeContent('about');
 		}.bind(this));
 		$("#contact-button").click(function(event){
+			event.preventDefault();
 			this.changeContent('contact');
 		}.bind(this));
 	},

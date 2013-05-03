@@ -15,6 +15,46 @@
 
       <div class="body-container">
 
+        <!-- Navbar -->
+        <div class="navbar navbar-inverse navbar-custom navbar-fixed-top">
+          <div class="navbar-inner navbar-custom">
+            <div class="navbar-container">
+
+              <a class="brand" href="#">grmnygrmny</a>
+              <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </a>
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                  <li class="divider-vertical"></li>
+                  <li class="nav-button" id="releases-button"><a href="#">releases</a></li>
+                  <li class="nav-button" id="about-button"><a href="#">about</a></li>
+                  <li class="divider-vertical"></li>
+                </ul>
+                <ul class="nav pull-right">
+                  <li class="divider-vertical"></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-button"><a href="http://facebook.com/grmnygrmny">facebook</a></li>
+                      <li class="nav-button"><a href="http://twitter.com/grmnygrmny">twitter</a></li>
+                      <li class="nav-button"><a href="http://grmnygrmny.bandcamp.com">bandcamp</a></li>
+                      <li class="nav-button"><a href="http://soundcloud.com/germanygermany">soundcloud</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-button">
+                    <a href="mailto:contact@grmnygrmny.com">contact</a>
+                  </li>
+                  <li class="divider-vertical"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.navbar -->
+
         <!-- Carousel
         ================================================== -->
         <div class="carousel slide">
@@ -31,37 +71,6 @@
             </div>
           </div>
         </div><!-- /.carousel -->
-
-        <!-- Navbar -->
-        <div class="navbar navbar-inverse navbar-custom">
-          <div class="navbar-inner navbar-custom">
-            <div class="navbar-container">
-
-              <a class="brand" href="#">grmnygrmny</a>
-              <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </a>
-              <div class="nav-collapse collapse">
-                <ul class="nav">
-                  <li class="divider-vertical"></li>
-                  <li class="nav-button" id="albums-button"><a href="#">albums</a></li>
-                  <li class="nav-button" id="about-button"><a href="#">about</a></li>
-                  <li class="divider-vertical"></li>
-                  <li class="nav-button"><a href="#">facebook</a></li>
-                  <li class="nav-button"><a href="#">twitter</a></li>
-                  <li class="nav-button"><a href="#">bandcamp</a></li>
-                  <li class="nav-button"><a href="#">soundcloud</a></li>
-                  <li class="divider-vertical"></li>
-                  <li class="nav-button"><a href="#">contact</a></li>
-                  <li class="divider-vertical"></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /.navbar -->
 
 
         <!-- Marketing messaging and featurettes
@@ -91,14 +100,16 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="static/js/vendor/bootstrap.min.js"></script>
         <script src="static/js/vendor/handlebars.js"></script>
-        <script type="text/template" id="content-albums">
+        <script type="text/template" id="content-releases">
           <hr class="featurette-divider">
 
             <div class="featurette">
               <img class="featurette-image pull-right" src="static/img/ls2.jpg">
               <h2 class="featurette-heading">Last Summer II <span class="muted">2013</span></h2>
               <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-              <a href="http://grmnygrmny.bandcamp.com/album/last-summer-ii" class="btn btn-primary btn-large">Buy on Bandcamp</a>
+              <div class="buy-link">
+                <a href="http://grmnygrmny.bandcamp.com/album/last-summer-ii" class="btn btn-primary btn-large">Buy on Bandcamp</a>
+              </div>
             </div>
 
             <hr class="featurette-divider">
