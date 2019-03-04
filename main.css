@@ -1,0 +1,248 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue";
+    -webkit-font-smoothing: antialiased;
+    background-color: #F8F8F8;
+}
+
+header {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: #FFF;
+    box-shadow: 0px 1px #EEE;
+    transition: all .2s ease-in;
+}
+
+header .container {
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 53px;
+    padding: 0 16px;
+}
+
+header .tralbum-container {
+    max-width: 1228px;
+}
+
+header .logo-and-search li {
+    padding-right: 19px;
+}
+
+/* User Icons */
+header .user-icons {
+    position: relative;
+}
+
+header .user-icons li {
+    align-items: center;
+    position: relative;
+    display: flex;
+}
+
+header .user-icons li a {
+    display: flex;
+    padding: 0 15px;
+    height: 100%;
+}
+
+header .user-icons li:hover {
+    cursor: pointer;
+    background: #F3F3F3;
+}
+
+header .logo {
+    display: block;
+    padding: 10px 0;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+header .user-icons > li,
+header .logo-and-search > li {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header svg, header img {
+    display: flex;
+    align-self: center;
+}
+
+header .logo-and-search input {
+    font-family: "Helvetica Neue";
+    background-color: #F3F3F3;
+    padding: 10px 13px;
+    font-size: 14px;
+    border: none;
+    width: 316px;
+    color: rgba(51,51,51,0.7);
+    border-radius: 3px;
+}
+
+header .logo-and-search input:focus {
+    outline: none;
+}
+
+header .profile {
+    border-radius: 50%;
+    display: block;
+}
+
+/* Homepage Styles */
+
+.hero {
+    width: 100%;
+    height: 540px;
+    background-color: #333;
+}
+
+.inner-hero {
+    margin: 0 auto;
+    height: 540px;
+    max-width: 1440px;
+    background-color: #000;
+}
+
+.inner-page {
+    max-width: 97%;
+    margin: 0 auto;
+    background-color: #FFF;
+    height: 4000px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d6d6d6+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #5e4da1 0%, #5D9FBA 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #5e4da1 0%,#5D9FBA 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #5e4da1 0%,#5D9FBA 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-9 */
+}
+
+@media(min-width:1130px) {
+    .inner-page {
+        max-width: 1106px;
+    }
+}
+
+/* Tralbum Styles */
+
+.tralbum {
+    flex-direction: column;
+    max-width: 975px;
+    height: 3000px;
+    margin: 54px auto 0;
+    background-color: #FFF;
+}
+
+.tralbum-cart {
+    /* position cart to right */
+    display: flex;
+    justify-content: flex-end;
+    max-width: 975px;
+    height: 3000px;
+    margin: 0 auto;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #333 30%, #666 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #333 30%,#666 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #333 30%,#666 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-9 */
+}
+
+.header-image {
+    background-color: #ddd;
+    height: 180px;
+    width: 100%;
+}
+
+.tralbum-content {
+    margin-top: 44px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.album-art {
+    background-color: #EEE;
+    height: 350px;
+    width: 350px;
+}
+
+.right-column {
+    width: 130px;
+    height: 100vh;
+    background-color: #ccc;
+}
+
+/* Dropdown Icon State */
+.link-active {
+    background-color: #F3F3F3;
+}
+
+/* Label User Menu */
+.label-user-menu {
+    display: none;
+    width: 305px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 53px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #FFF;
+    border: 1px #EEE solid;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+header .label-user-menu li {
+    list-style: none;
+    flex-shrink: 0;
+    display: flex;
+    width: 100%;
+}
+
+header .label-user-menu ul {
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+}
+
+header .artists {
+    max-height: 200px;
+}
+
+.user-menu-show {
+    display: flex;
+}
+
+
+/* Hover Options */
+
+/* header .user-icons li:hover path {
+    fill: #1DA0C3;
+} */
+
+/* header .right > li:hover:after {
+    content: "";
+    position:absolute;
+    bottom:0;
+    height: 1px;
+    background:black;
+    bottom:-1px;left:0;width:100%;
+} */
