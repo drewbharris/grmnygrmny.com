@@ -1,0 +1,206 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="unfinished ideas (2010-2010) by Germany Germany">
+    <meta property="og:description" content="Listen to the latest album from Canadian artist Germany Germany.">
+    <meta property="og:image" content="http://grmnygrmny.com/unfinished-ideas-2010-2012/art.jpg">
+    <meta property="og:url" content="http://grmnygrmny.com/unfinished-ideas-2010-2012">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            background: #eef2f3;
+            margin: 0;
+        }
+        .outer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background-image: url('bg.jpg');
+        }
+        .main-container {
+            width: 50vw;
+            background: #FFF;
+            padding: 32px 24px;
+            box-shadow: 0 0 1px 0 #dfdfdf;
+        }
+        .title {
+            margin-top: 24px;
+            font-size: 20px;
+        }
+        .title .album {
+            /*display: block;*/
+            font-weight: 500;
+        }
+        .title .artist {
+            font-weight: 500;
+        }
+        .art img {
+            width: 30vw;
+            height: 30vw;
+        }
+        .links {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .site-button {
+            width: 100%;
+            border: 1px solid #333;
+            border-radius: 5px;
+            margin: 20px 0 0 0;
+            outline: none;
+            background: #FFF
+        }
+        .site-button:hover {
+            cursor: pointer;
+        }
+        .site-button img {
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .site-button.vimeo img {
+            vertical-align: middle;
+            display: inline-block;
+            height: 24px;
+            margin: 8px 4px;
+        }
+        .site-button.bandcamp img {
+            vertical-align: middle;
+            display: inline-block;
+            height: 30px;
+            width: 49px;
+            margin: 5px 2px 5px 0;
+        }
+        .site-button.spotify img {
+            height: 28px;
+            width: 35px;
+            margin: 6px 0;
+        }
+        .site-button.apple img {
+            height: 28px;
+            width: 30px;
+            margin: 6px 2px 6px 0;
+        }
+        .site-button span {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .site-button.vimeo span {
+            font-weight: 600;
+        }
+        .site-button:hover span {
+            text-decoration: underline;
+        }
+        #vimeo {
+            display: none;
+        }
+
+        @media (max-width: 650px) {
+            #vimeo {
+                display: block;
+            }
+            .main-container {
+                width: 95vw;
+                padding: 0;
+            }
+            .art img {
+                width: 70vw;
+                height: 70vw;
+            }
+            body {
+                background: #fff;
+            }
+            .outer {
+                background: none;
+            }
+            .main-container {
+                box-shadow: none;
+            }
+            .title {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 651px) and (max-width: 1000px) {
+            .main-container {
+                width: 40vw;
+            }
+            .art img {
+                width: 40vw;
+                height: 40vw;
+            }
+        }
+        @media (min-width: 1200px) {
+            .main-container {
+                width: 30vw;
+            }
+            .art img {
+                width: 30vw;
+                height: 30vw;
+            }
+        }
+    </style>
+    <body>
+        <div class="outer">
+            <div class="main-container">
+                <div class="art">
+                    <img src="art.jpg">
+                </div>
+<!--                 <div class="video">
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/303197123?portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                </div> -->
+                <div class="links">
+                    <div class="title">
+                        <span class="album">unfinished ideas (2010 - 2012)</span>, by <span class="artist">Germany Germany</span>.
+                    </div>
+<!--                     <button class="site-button vimeo" id="vimeo">
+                        <img src="vimeo.png">
+                        <span>
+                            watch &ldquo;deep forest&rdquo;
+                        </span>
+                    </button> -->
+
+                    <button class="site-button bandcamp" id="bandcamp">
+                        <img src="bclogo.png">
+                        <span>
+                            listen/buy on bandcamp
+                        </span>
+                    </button>
+
+                    <button class="site-button spotify" id="spotify">
+                        <img src="spotifylogo.png">
+                        <span>
+                            listen on spotify
+                        </span>
+                    </button>
+
+                    <button class="site-button apple" id="apple">
+                        <img src="applemusiclogo.jpg">
+                        <span>
+                            listen on apple music
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript">
+        document.getElementById("bandcamp").onclick = function () {
+            window.location.href = "https://grmnygrmny.bandcamp.com/album/unfinished-ideas-2010-2012";
+        };
+
+        document.getElementById("spotify").onclick = function () {
+            window.location.href = "https://open.spotify.com/album/10cjy0BAPcOQidMm8rPLQm";
+        };
+
+        document.getElementById("apple").onclick = function () {
+            window.location.href = "https://itunes.apple.com/lu/album/unfinished-ideas-2010-2012/1454816568";
+        };
+
+        
+    </script>
+    </body>
+</html>
