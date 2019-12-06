@@ -1,11 +1,11 @@
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="unfinished ideas (2010-2010) by Germany Germany">
-    <meta property="og:description" content="Listen to the latest album from Canadian artist Germany Germany.">
-    <meta property="og:image" content="http://grmnygrmny.com/unfinished-ideas-2010-2012/art.jpg">
-    <meta property="og:url" content="http://grmnygrmny.com/unfinished-ideas-2010-2012">
+    <meta property="og:title" content="Someone New by Germany Germany">
+    <meta property="og:description" content="Listen to the latest track from Canadian artist Germany Germany.">
+    <meta property="og:image" content="http://grmnygrmny.com/someone-new/art.jpg">
+    <meta property="og:url" content="http://grmnygrmny.com/someone-new">
     <meta name="twitter:card" content="summary_large_image">
-
+    <title>Someone New by Germany Germany</title>
     <style>
         body {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -83,6 +83,11 @@
             width: 30px;
             margin: 6px 2px 6px 0;
         }
+	.site-button.soundcloud img {
+            height: 28px;
+            width: auto;
+            margin: 6px 10px 6px 0;
+	}
         .site-button span {
             display: inline-block;
             vertical-align: middle;
@@ -154,8 +159,8 @@
                     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/303197123?portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                 </div> -->
                 <div class="links">
-                    <div class="title">
-                        <span class="album">unfinished ideas (2010 - 2012)</span>, by <span class="artist">Germany Germany</span>.
+                    <div class="title" style="display: none;">
+                        <span class="album">Dawn</span>, by <span class="artist">Germany Germany</span>.
                     </div>
 <!--                     <button class="site-button vimeo" id="vimeo">
                         <img src="vimeo.png">
@@ -184,20 +189,31 @@
                             listen on apple music
                         </span>
                     </button>
+
+		    <button class="site-button soundcloud" id="soundcloud">
+                        <img src="soundcloudlogo.png">
+                        <span>
+                            listen on soundcloud
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
     <script type="text/javascript">
         document.getElementById("bandcamp").onclick = function () {
-            window.location.href = "https://grmnygrmny.bandcamp.com/album/unfinished-ideas-2010-2012";
+            window.location.href = "https://grmnygrmny.bandcamp.com/album/harvest-2";
         };
 
         document.getElementById("spotify").onclick = function () {
-            window.location.href = "https://open.spotify.com/album/10cjy0BAPcOQidMm8rPLQm";
+            window.location.href = "https://open.spotify.com/album/1fQZtfgeP1kPv6VrUVoucw";
         };
 
         document.getElementById("apple").onclick = function () {
-            window.location.href = "https://itunes.apple.com/lu/album/unfinished-ideas-2010-2012/1454816568";
+            window.location.href = "https://music.apple.com/ca/album/dawn-single/1485580991";
+        };
+
+	document.getElementById("soundcloud").onclick = function () {
+            window.location.href = "https://soundcloud.com/germanygermany/dawn-1";
         };
 
         
