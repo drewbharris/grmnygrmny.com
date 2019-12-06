@@ -13,6 +13,10 @@
             background: #eef2f3;
             margin: 0;
         }
+        a,
+        a:hover {
+            text-decoration: none;
+        }
         .outer {
             display: flex;
             align-items: center;
@@ -51,7 +55,10 @@
             border-radius: 5px;
             margin: 20px 0 0 0;
             outline: none;
-            background: #FFF
+            background: #FFF;
+            display: block;
+            color: #333;
+            text-align: center;
         }
         .site-button:hover {
             cursor: pointer;
@@ -164,43 +171,30 @@
                         </span>
                     </button> -->
 
-                    <button class="site-button bandcamp" id="bandcamp2">
+
+                    <a class="site-button bandcamp" href="https://grmnygrmny.bandcamp.com/album/harvest-2">
                         <img src="bclogo.png">
                         <span>
                             listen/buy on bandcamp
                         </span>
-                    </button>
+                    </a>
 
-                    <button class="site-button spotify" id="spotify">
+                    <a class="site-button spotify" href="https://open.spotify.com/album/3cUaGAmsEFvlLjtrFTERyk">
                         <img src="spotifylogo.png">
                         <span>
                             listen on spotify
                         </span>
-                    </button>
+                    </a>
 
-                    <button class="site-button apple" id="apple">
+                    <a class="site-button apple" href="https://music.apple.com/us/album/harvest/1488496212">
                         <img src="applemusiclogo.jpg">
                         <span>
                             listen on apple music
                         </span>
-                    </button>
+                    </a>
+
                 </div>
             </div>
         </div>
-    <script type="text/javascript">
-        document.getElementById("bandcamp2").onclick = function () {
-            window.location.href = "https://grmnygrmny.bandcamp.com/album/harvest-2";
-        };
-
-        document.getElementById("spotify").onclick = function () {
-            window.location.href = "https://open.spotify.com/album/3cUaGAmsEFvlLjtrFTERyk";
-        };
-
-        document.getElementById("apple").onclick = function () {
-            window.location.href = "https://music.apple.com/us/album/harvest/1488496212";
-        };
-
-        
-    </script>
     </body>
 </html>
